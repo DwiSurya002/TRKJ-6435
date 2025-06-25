@@ -1,9 +1,0 @@
-{
-  "bucketName": "my-dev-bucket",
-  "region": "us-east-1",
-  "frontend_subdomain": "dev",
-  "frontend_dev_subdomain": "dev",
-  "domain_name": "example.local",
-  "backend_subdomain": "api",
-  "backend_dev_subdomain": "api-dev"
-}
