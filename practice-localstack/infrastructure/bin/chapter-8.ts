@@ -24,6 +24,9 @@ if (['ONLY_PROD'].includes(process.env.CDK_MODE || '')) {
 
 if (['ONLY_PIPELINE'].includes(process.env.CDK_MODE || '')) {
   new Chapter8PipelineStack(app, 'Chapter8PipelineStack', {
-    env: { region: 'us-east-1', account: process.env.CDK_DEFAULT_ACCOUNT },
+    env: {
+    account: process.env.CDK_DEFAULT_ACCOUNT || '000000000000',
+    region: process.env.CDK_DEFAULT_REGION || 'us-east-1',
+	}
   });
 }
